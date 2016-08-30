@@ -3,5 +3,8 @@
   <repo quality="experimental" status="unofficial">
     <name>ja-fonts</name>
     <description>A collection of Japanese fonts</description>
+    <homepage>https://github.com/NTSC-J/ja-fonts</homepage>
+    <source type="git">git://github.com/NTSC-J/ja-fonts.git</source>
+    <source type="git">https://github.com/NTSC-J/ja-fonts.git</source>
   </repo>
 </repositories>

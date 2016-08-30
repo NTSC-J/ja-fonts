@@ -5,10 +5,12 @@
 EAPI=6
 inherit font
 
+# upstream does not provide a version information
 MY_PN="GL-Tsukiji-5go"
+MY_PV="33331"
 DESCRIPTION="An old Japanese font originally created by Tokyo Tsukiji Kappan"
 HOMEPAGE="http://gutenberg.osdn.jp/ja/license.html"
-SRC_URI="http://osdn.jp/projects/gutenberg/downloads/33331/${MY_PN}.ttf http://osdn.jp/projects/gutenberg/downloads/33331/${MY_PN}-readme.txt"
+SRC_URI="http://osdn.jp/projects/gutenberg/downloads/${MY_PV}/${MY_PN}.ttf http://osdn.jp/projects/gutenberg/downloads/${MY_PV}/${MY_PN}-readme.txt"
 
 LICENSE="Gutenberg"
 SLOT="0"
@@ -22,7 +24,7 @@ S=${WORKDIR}
 FONT_SUFFIX="ttf"
 FONT_S="${S}"
 
-DOCS="${MY_PN}-readme.txt"
+DOCS="*.txt"
 
 src_unpack() {
 	for a in ${A}; do
